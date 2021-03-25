@@ -81,6 +81,25 @@ li a:hover {
   box-shadow: -14px 10px 0px 0px rgba(240, 240, 240, 1);
   width: auto;
 }
+
+#summary {
+}
+
+#summary:hover {
+    /*cursor: pointer;*/
+  /*animation: MoveUpDown 1.1s linear infinite;*/
+  position: relative;
+  left: 0;
+  bottom: 0;
+  
+}
+
+.summary-portrait {
+    width: 90%;
+    height: 60%;
+    padding: 20px 0;
+    margin: 0 auto;
+}
 .box {
   width: 100%;
   display: flex;
@@ -488,6 +507,15 @@ img.icon {
   float: left;
 }
 
+@keyframes MoveUpDown {
+  0%,
+  100% {
+    bottom: -10px;
+  }
+  50% {
+    bottom: 10px;
+  }
+}
 
 /* id */
 /* end of id */
