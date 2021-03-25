@@ -59,11 +59,11 @@ li a:hover {
 
 #hero {
   min-width: 400px;
-  width: 95%;
+  width: 92%;
   height: 90vh;
   margin: 0 auto;
-  background-image: url("../images/portrait4.jpg");
-  background-position: center center;
+  background-image: url("../images/portrait6.jpg");
+  background-position: center left;
   background-size: cover;
   background-repeat: no-repeat;
 }
