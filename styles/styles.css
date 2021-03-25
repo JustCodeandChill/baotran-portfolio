@@ -4,10 +4,12 @@
   font-family: "Lora", serif;
   font-family: "Roboto", sans-serif;
 }
+
+body,
 html {
+  height: 100%;
+  width: 100%;
   scroll-behavior: smooth;
-}
-body {
 }
 
 section {
@@ -49,12 +51,36 @@ li a:hover {
   background-color: #111;
 }
 /* end of navigation */
-.container {
-  max-width: 1000px;
+/*.container {
+  max-width: 1200px;
   min-width: 400px;
   margin: 0 auto;
+}*/
+
+#hero {
+  min-width: 400px;
+  width: 95%;
+  height: 90vh;
+  margin: 0 auto;
+  background-image: url("../images/portrait4.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
+#intro {
+  background-color: #febb79;
+  position: absolute;
+  top: 20vh;
+  left: 10vw;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-box-shadow: -14px 10px 0px 0px rgba(240, 240, 240, 1);
+  -moz-box-shadow: -14px 10px 0px 0px rgba(240, 240, 240, 1);
+  box-shadow: -14px 10px 0px 0px rgba(240, 240, 240, 1);
+  width: auto;
+}
 .box {
   width: 100%;
   display: flex;
@@ -264,7 +290,7 @@ a {
   display: inline-block;
 }
 .center-top {
-  margin-top: 40%;
+  margin-top: 30%;
   position: relative;
 }
 .margin-lft {
@@ -321,7 +347,7 @@ a {
 }
 
 .huge-txt {
-  font-size: 70px;
+  font-size: 65px;
   margin-bottom: 10px;
   font-weight: 700;
   letter-spacing: 7px;
@@ -388,6 +414,17 @@ a {
 .custom-bg {
   background-color: #3c6ecc;
 }
+
+.gradient-bg {
+  background: rgb(181, 0, 48);
+  background: linear-gradient(
+    90deg,
+    rgba(181, 0, 48, 1) 0%,
+    rgba(54, 7, 102, 1) 43%,
+    rgba(7, 28, 198, 1) 87%,
+    rgba(9, 9, 121, 1) 100%
+  );
+}
 .clean-white-bg {
   background-color: #ffffff;
 }
@@ -440,16 +477,17 @@ img.icon {
 }
 
 .border {
-    border: 2px solid red;
+  border: 2px solid red;
 }
 
 .f-r {
-    float: right;
+  float: right;
 }
 
 .f-l {
-    float: left;
+  float: left;
 }
+
 
 /* id */
 /* end of id */
