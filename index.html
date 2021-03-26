@@ -188,8 +188,8 @@
         <h2 class="sign">
           <span class="semi-large-txt white-txt b">Contact</span>
         </h2>
-
-        <div class="black-bg radius-bdr shadow white-txt">
+<!-- white-txt -->
+        <div class="black-bg radius-bdr shadow ">
           <h2 class="conatact-invite">
             HAVE A PROJECT?<br />LETS TALK ABOUT IT
           </h2>
@@ -204,7 +204,21 @@
                 Email me
               </button>
               <div class="row">
-                <div></div>
+                <div>
+                  <form
+                    id="my-form"
+                    action="https://formspree.io/f/mwkaewzp"
+                    method="POST"
+                    class="dark-txt"
+                  >
+                    <label>Email:</label>
+                    <input type="email" name="email" />
+                    <label>Message:</label>
+                    <input type="text" name="message" />
+                    <button id="my-form-button">Submit</button>
+                    <p id="my-form-status"></p>
+                  </form>
+                </div>
               </div>
             </div>
           </div>
@@ -217,10 +231,9 @@
     <script>
       const sendEmailBtn = document.querySelector("#send-email");
       const headers = {
-                "Access-Control-Allow-Origin": "*",
-                "Access-Control-Allow-Methods":
-                  "GET,PUT,POST,DELETE,PATCH,OPTIONS",
-              }
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Methods": "GET,PUT,POST,DELETE,PATCH,OPTIONS",
+      };
       sendEmailBtn.addEventListener("click", (e) => {
         //Email.send({
         //  Host: "smtp.elasticemail.com",
@@ -251,9 +264,34 @@
           .catch((err) => console.log("Err happend", err, headers));
       });
 
-      axios.get("http://localhost:3004/", {
-              headers: headers,
-            }).then((e) => console.log(e))
+      axios
+        .get("http://localhost:3004/", {
+          headers: headers,
+        })
+        .then((e) => console.log(e));
+
+      var form = document.getElementById("my-form");
+
+      async function handleSubmit(event) {
+        event.preventDefault();
+        var status = document.getElementById("my-form-status");
+        var data = new FormData(event.target);
+        fetch(event.target.action, {
+          method: form.method,
+          body: data,
+          headers: {
+            Accept: "application/json",
+          },
+        })
+          .then((response) => {
+            status.innerHTML = "Thanks for your submission!";
+            form.reset();
+          })
+          .catch((error) => {
+            status.innerHTML = "Oops! There was a problem submitting your form";
+          });
+      }
+      form.addEventListener("submit", handleSubmit);
     </script>
   </body>
 </html>
