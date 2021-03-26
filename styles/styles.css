@@ -82,24 +82,25 @@ li a:hover {
   width: auto;
 }
 
-#summary {
+#summary, #skills {
+  position: relative;
 }
 
 #summary:hover {
-    /*cursor: pointer;*/
+  /*cursor: pointer;*/
   /*animation: MoveUpDown 1.1s linear infinite;*/
   position: relative;
   left: 0;
   bottom: 0;
-  
 }
 
 .summary-portrait {
-    width: 90%;
-    height: 60%;
-    padding: 20px 0;
-    margin: 0 auto;
+  width: 100%;
+  height: 60%;
+  padding: 20px 0 ;
+  margin: 0 auto;
 }
+
 .box {
   width: 100%;
   display: flex;
@@ -256,7 +257,13 @@ li a:hover {
 /* End tripple circle */
 .sign {
   background-color: #d47129;
-  padding: 4px 20px;
+  padding: 8px 20px;
+  position: absolute;
+  top: -30px;
+  left: -30px;
+  z-index: 5;
+  -ms-transform: rotate(-20deg); /* IE 9 */
+  transform: rotate(-10deg); /* Standard syntax */
 }
 
 .skill-item {
@@ -323,8 +330,12 @@ a {
 }
 
 .margin-top {
-  margin-top: 10px;
+  margin-top: 20px;
 }
+
+.margin-top-2 {
+    margin-top: 40px;
+  }
 
 .padding-btm {
   padding-bottom: 20px;
