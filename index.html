@@ -56,7 +56,7 @@
       </div>
     </header>
     <!-- images -->
-    <div class="container margin-top">
+    <div class="margin-top">
       <!-- for 3 boxes -->
       <!--<div class="white-txt margin-top">
         <div class="box box-center">
@@ -73,9 +73,9 @@
       </div>-->
 
       <!-- summary -->
-      <section id="summary" class="container margin-bttm">
+      <section id="summary" class="container margin-bttm-2">
         <h2 class="sign">
-          <span class="semi-large-txt white-txt b">Summary</span>
+          <span class="semi-large-txt white-txt b">About</span>
         </h2>
         <div class="row black-bg white-txt radius-bdr shadow margin-top">
           <div
@@ -185,13 +185,71 @@
 
       <!-- Contact me -->
       <section id="contact" class="container">
-        <div class="row black-bg radius-bdr shadow">
-          <h2 class="sign">
-            <span class="semi-large-txt white-txt b">Contact</span>
+        <h2 class="sign">
+          <span class="semi-large-txt white-txt b">Contact</span>
+        </h2>
+
+        <div class="black-bg radius-bdr shadow white-txt">
+          <h2 class="conatact-invite">
+            HAVE A PROJECT?<br />LETS TALK ABOUT IT
           </h2>
-          sad
+          <div class="row">
+            <!-- col-xs-12 col-sm-12  col-lg-5 offset-md-1-->
+            <div
+              class="offset-md-1 col-md-5"
+              style="border-right: 2px solid white"
+            >
+              Drop me a message on social media<br />
+              <button id="send-email" class="dark-bg btn btn-primary">
+                Email me
+              </button>
+              <div class="row">
+                <div></div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </div>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+      const sendEmailBtn = document.querySelector("#send-email");
+      const headers = {
+                "Access-Control-Allow-Origin": "*",
+                "Access-Control-Allow-Methods":
+                  "GET,PUT,POST,DELETE,PATCH,OPTIONS",
+              }
+      sendEmailBtn.addEventListener("click", (e) => {
+        //Email.send({
+        //  Host: "smtp.elasticemail.com",
+        //  Username: "baotranquoc9@gmail.com",
+        //  Password: "A9710133BDAFC5727EED1EFBF4162D212167",
+        //  To: "baotranquoc9@gmail.com",
+        //  From: "inforreceiver@gmail.com",
+        //  Subject: "Demo of smtp api",
+        //  Body: "And this is the body",
+        //}).then((message) => alert(message));
+
+        axios
+          .post(
+            "https://api.elasticemail.com/v2/email/send",
+            {
+              apikey:
+                "3FD8B0F0E90AAC40088A6EE8099AF0CE1F18733FE6BEDBCDE81CDB44B25D67461FB8694E72AE8902F8CE4942175A7049",
+              subject: "Demo of elastic api",
+              from: "baotranquoc9@gmail.com",
+              to: "baotranquoc9@gmail.com",
+              bodyText: "Hello bao",
+            },
+            {
+              headers: headers,
+            }
+          )
+          .then((e) => console.log(e))
+          .catch((err) => console.log("Err happend", err, headers));
+      });
+    </script>
   </body>
 </html>
