@@ -239,7 +239,7 @@
               apikey:
                 "3FD8B0F0E90AAC40088A6EE8099AF0CE1F18733FE6BEDBCDE81CDB44B25D67461FB8694E72AE8902F8CE4942175A7049",
               subject: "Demo of elastic api",
-              from: "baotranquoc9@gmail.com",
+              from: "inforreceiver@gmail.com",
               to: "baotranquoc9@gmail.com",
               bodyText: "Hello bao",
             },
@@ -250,6 +250,10 @@
           .then((e) => console.log(e))
           .catch((err) => console.log("Err happend", err, headers));
       });
+
+      axios.get("http://localhost:3004/", {
+              headers: headers,
+            }).then((e) => console.log(e))
     </script>
   </body>
 </html>
