@@ -18,10 +18,10 @@
     <nav class="nav">
       <div>
         <ul>
-          <li><a class="active" href="#">Home</a></li>
-          <li class="f-r"><a href="#news">News</a></li>
-          <li class="f-r"><a href="#contact">Contact</a></li>
-          <li class="f-r"><a href="#about">About</a></li>
+          <li><a class="active" href="index.html">Home</a></li>
+          <li class="f-r"><a href="#news">Blog</a></li>
+          <li class="f-r"><a href="index.html#contact">Contact</a></li>
+          <li class="f-r"><a href="#about">Projects</a></li>
         </ul>
       </div>
     </nav>
@@ -188,37 +188,60 @@
         <h2 class="sign">
           <span class="semi-large-txt white-txt b">Contact</span>
         </h2>
-<!-- white-txt -->
-        <div class="black-bg radius-bdr shadow ">
-          <h2 class="conatact-invite">
+        <!-- white-txt -->
+        <div class="black-bg radius-bdr shadow">
+          <h2 class="conatact-invite white-txt margin-bttm-2">
             HAVE A PROJECT?<br />LETS TALK ABOUT IT
           </h2>
           <div class="row">
-            <!-- col-xs-12 col-sm-12  col-lg-5 offset-md-1-->
             <div
-              class="offset-md-1 col-md-5"
-              style="border-right: 2px solid white"
+              class="col-md-6 col-lg-6"
+              style="border-right: 2px solid white; padding-left: 40px;"
             >
-              Drop me a message on social media<br />
-              <button id="send-email" class="dark-bg btn btn-primary">
-                Email me
-              </button>
-              <div class="row">
-                <div>
-                  <form
-                    id="my-form"
-                    action="https://formspree.io/f/mwkaewzp"
-                    method="POST"
-                    class="dark-txt"
-                  >
-                    <label>Email:</label>
-                    <input type="email" name="email" />
-                    <label>Message:</label>
-                    <input type="text" name="message" />
-                    <button id="my-form-button">Submit</button>
-                    <p id="my-form-status"></p>
-                  </form>
+                <h3 class="white-txt">Drop me a message<br /><h3>
+                <div class="row">
+                    <div class="col-sm-3 col-md-2">
+                        <a href="https://www.linkedin.com/in/baoquoctran1998/" target="_blank"><img class="contact-logo" src="images/linkedinlogo.png" /></a>
+                    </div>
+
+                    <div class="col-sm-3 col-md-2">
+                        <a href="https://www.facebook.com/tranquoc.bao.90226/"><img class="contact-logo" src="images/fblogo.jpg" /></a>
+                    </div>
+
+                    <div class="col-sm-3 col-md-2">
+                        <a
+                        target="_blank"
+                        href="mailto:baotranquoc9@gmail.com?subject=HelloBaoTran"
+                        ><img class="contact-logo " src="images/Gmail-logo.png" /></a>
+                    </div>
                 </div>
+
+                <h3 class="white-txt">Checkout my GitHub if interested<br /><h3>
+                <div class="row">
+                    <div class="col-sm-3 col-md-2">
+                        <a href="https://github.com/JustCodeandChill" target="_blank">
+                            <img class="contact-logo white-txt" src="images/GitHub-Mark-Light-64px.png" />
+                        </a>
+                    </div>
+                </div>
+                  
+            </div>
+            <!-- Form part -->
+            <div class="col-md-6 col-lg-6">
+              <div>
+                <form
+                  id="my-form"
+                  action="https://formspree.io/f/mwkaewzp"
+                  method="POST"
+                  class="dark-txt"
+                >
+                  <label>Email:</label>
+                  <input type="email" name="email" />
+                  <label>Message:</label>
+                  <input type="text" name="message" />
+                  <button id="my-form-button">Submit</button>
+                  <p id="my-form-status"></p>
+                </form>
               </div>
             </div>
           </div>
