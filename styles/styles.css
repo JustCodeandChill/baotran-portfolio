@@ -223,6 +223,46 @@ color: #cc773c;
     width: 50px;
     height: 40px;
 }
+
+#my-form {
+    /*background-color: #d1d7d7;*/
+    padding: 20px 30px 5px 30px;
+    font-size: 1.5rem;
+    border: 2px solid #d1d7d7;
+    border-radius: 5px;
+    color: #d1d7d7;
+}
+
+.input-row {
+    margin: 5px 0 7px 0;
+}
+input[type="text"], input[type="email"] {
+    padding: 5px 5px;
+    border-radius: 5px;
+    color:rgba(0, 0, 0, 0.75);
+}
+
+#form-message {
+    height: 90px;
+}
+
+#my-form-button{
+    margin-top: 5px;
+    color: #d1d7d7;
+    background-color: #326ef0;
+    padding: 5px 50px;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    transition: background-color 0.2s;
+}
+
+#my-form-button:hover {
+    
+    background-color: #013bb9;
+}
+
 .medium-hgt {
   height: auto;
 }
