@@ -17,12 +17,6 @@ section {
 }
 
 /* navigation */
-.nav {
-  /*height: 50px;
-  width: 100%;
-  background-color: green;*/
-}
-
 ul {
   list-style-type: none;
   margin: 0;
@@ -48,7 +42,9 @@ li a {
 }
 
 li a:hover {
-  background-color: #111;
+  background-color: #cc773c;
+  color: white;
+  text-decoration: none;
 }
 /* end of navigation */
 /*.container {
@@ -69,7 +65,7 @@ li a:hover {
 }
 
 #intro {
-  background-color: #febb79;
+  background-color: #ffa952;
   position: absolute;
   top: 20vh;
   left: 10vw;
