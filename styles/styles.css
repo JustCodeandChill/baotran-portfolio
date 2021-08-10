@@ -131,11 +131,8 @@ li a:hover {
   left: -300px;
   padding: 0px 20px 7px 20px;
   border-radius: 10px;
-  -webkit-animation: slideLeft 0.5s forwards;
-  -webkit-animation-delay: 2s;
-  animation: slideLeft 0.5s forwards;
-  animation-delay: 1s;
 }
+
 
 .exp-box-right {
   background-color: #f9feff;
@@ -144,10 +141,6 @@ li a:hover {
   right: -200px;
   padding: 0px 20px 7px 20px;
   border-radius: 10px;
-  -webkit-animation: slideRight 0.5s forwards;
-  -webkit-animation-delay: 2s;
-  animation: slideRight 0.5s forwards;
-  animation-delay: 2s;
 }
 
 .exp-job {
@@ -600,7 +593,23 @@ img.icon {
 .f-l {
   float: left;
 }
+/* class relate to animation */
+.left-animation {
+    -webkit-animation: slideLeft 0.5s forwards;
+  -webkit-animation-delay: 2s;
+  animation: slideLeft 0.5s forwards;
+  animation-delay: 1s;
+}
 
+
+.right-animation {
+    -webkit-animation: slideRight 0.5s forwards;
+    -webkit-animation-delay: 2s;
+    animation: slideRight 0.5s forwards;
+    animation-delay: 2s;
+}
+
+/* animation */
 @keyframes MoveUpDown {
   0%,
   100% {
@@ -638,112 +647,3 @@ img.icon {
 /* id */
 /* end of id */
 
-/* Project.html */
-.flex-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.flip-card {
-  background-color: transparent;
-  width: 250px;
-  height: 300px;
-  margin: 0 auto;
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
-  margin-bottom: 20px;
-}
-
-/* This container is needed to position the front and back side */
-.flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-  
-}
-
-/* Do an horizontal flip when you move the mouse over the flip box container */
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-/* Position the front and back side */
-.flip-card-front,
-.flip-card-back {
-    border-radius: 10px;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden; /* Safari */
-  backface-visibility: hidden;
-}
-
-/* Style the front side (fallback if image is missing) */
-.flip-card-front {
-  background-color: rgb(238, 238, 238);
-  color: black;
-}
-
-/* Style the back side */
-.flip-card-back {
-  background-color: dodgerblue;
-  color: white;
-  transform: rotateY(180deg);
-  padding: 0 10px;
-  line-height: 3rem;
-}
-
-.card-img {
-  width: 100%;
-  height: 80%;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  background-repeat: no-repeat;
-}
-
-.card-title {
-    padding-top: 5%;
-    font-size: 2rem;
-    font-weight: 700;
-    letter-spacing: 1px;
-}
-
-#citybike {
-  background-image: url("../images/api.jpg");
-  background-size: cover;
-  background-position: left center;
-}
-
-#infoBoard {
-    background-image: url("../images/ib.jpg");
-    background-size: cover;
-    background-position: right center;
-}
-
-#etheral {
-    background-image: url("../images/etheral.jpg");
-    background-size: cover;
-    background-position: right center;  
-}
-
-#coporate {
-    background-image: url("../images/corporate.jpg");
-    background-size: cover;
-    background-position: right center;  
-}
-
-#puzzleGame {
-    background-image: url("../images/puzzlesliding.jpg");
-    background-size: cover;
-    background-position: left center;  
-}
-
-#troyWeb{
-    background-image: url("../images/troyWeb.jpg");
-    background-size: cover;
-    background-position: center center;  
-}
