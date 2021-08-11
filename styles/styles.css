@@ -168,6 +168,14 @@ li a:hover {
   position: relative;
   border-radius: 10px;
 }
+
+#exp3 {
+    background-image: url("../images/exp3.jpg");
+    background-position: right left;
+    position: relative;
+    border-radius: 10px;
+  }
+
 .exp-block {
   margin-bottom: 50px;
 }
@@ -800,7 +808,7 @@ img.icon {
 
   .exp-box-left {
     position: absolute;
-    top: 50%;
+    bottom: 0;
     left: 0;
     padding: 0px 20px 7px 20px;
     border-radius: 10px;
@@ -821,7 +829,7 @@ img.icon {
   }
 
   .exp-company {
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-transform: uppercase;
     font-weight: 700;
   }
