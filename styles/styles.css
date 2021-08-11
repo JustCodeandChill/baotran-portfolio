@@ -50,7 +50,7 @@ body {
     #090979 100%
   ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b27080', endColorstr='#090979',GradientType=1 ); /* IE6-9 */
-    background-repeat: no-repeat;
+  background-repeat: no-repeat;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
@@ -170,11 +170,17 @@ li a:hover {
 }
 
 #exp3 {
-    background-image: url("../images/exp3.jpg");
-    background-position: right left;
-    position: relative;
-    border-radius: 10px;
-  }
+  background-image: url("../images/exp3.jpg");
+  background-position: right left;
+  position: relative;
+  border-radius: 10px;
+}
+
+#exp4 {
+  background-image: url("../images/exp4.jpg");
+  position: relative;
+  border-radius: 10px;
+}
 
 .exp-block {
   margin-bottom: 50px;
@@ -205,6 +211,24 @@ li a:hover {
   padding: 0px 20px 7px 20px;
   border-radius: 10px;
 }
+
+.exp-box-left-no-animation{
+    background-color: #f9feff;
+    position: absolute;
+    top: 50%;
+    left: -10px;
+    padding: 0px 20px 7px 20px;
+    border-radius: 10px;
+  }
+  
+  .exp-box-right-no-animation {
+    background-color: #f9feff;
+    position: absolute;
+    top: 55%;
+    right: -10px;
+    padding: 0px 20px 7px 20px;
+    border-radius: 10px;
+  }
 
 .exp-job {
   font-size: 2rem;
@@ -610,7 +634,7 @@ a {
     #090979 100%
   ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b27080', endColorstr='#090979',GradientType=1 ); /* IE6-9 */
-    background-repeat: no-repeat;
+  background-repeat: no-repeat;
 }
 .clean-white-bg {
   background-color: #ffffff;
@@ -813,7 +837,7 @@ img.icon {
     padding: 0px 20px 7px 20px;
     border-radius: 10px;
   }
-  
+
   .exp-box-right {
     background-color: #f9feff;
     position: absolute;
@@ -834,8 +858,8 @@ img.icon {
     font-weight: 700;
   }
   .exp-work {
-      font-size: 1.4rem;
-      line-height: 1.2rem;
+    font-size: 1.4rem;
+    line-height: 1.2rem;
   }
   #contact {
     padding-bottom: 50px;
@@ -889,16 +913,14 @@ img.icon {
   }
 
   .left-animation {
-    -webkit-animation:none;
-    animation: none;
-  }
-  
-  .right-animation {
-    -webkit-animation:none;
+    -webkit-animation: none;
     animation: none;
   }
 
-  
+  .right-animation {
+    -webkit-animation: none;
+    animation: none;
+  }
 }
 
 /* Small screen devices (600px and above) */
