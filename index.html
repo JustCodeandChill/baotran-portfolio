@@ -1,310 +1,866 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
     <title>Paul Tran portfolio</title>
-    <link type="text/css" rel="stylesheet" href="./styles/styles.css" />
-    <link type="text/css" rel="stylesheet" href="./styles/bootstrap.min.css" />
-    <link rel="icon" href="./images/icon.jpg" type="image/icon type" />
-    <!-- Google fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="assets/img/logotech.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Google Fonts -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500&family=Roboto:wght@200;400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
       rel="stylesheet"
     />
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+
+    <!-- =======================================================
+  * Template Name: iPortfolio - v3.7.0
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
   </head>
-  <!--  -->
+
   <body>
-    <nav class="nav">
-        <ul>
-          <li><a class="active" href="index.html">Home</a></li>
-          <!--<li class="f-r"><a href="https://icodemyself.com" target="blank">Blog</a></li>-->
-          <li class="f-r"><a href="index.html#contact">Contact</a></li>
-          <li class="f-r"><a href="projects.html">Projects</a></li>
-        </ul>
-    </nav>
-    <!-- hero section -->
-    <header id="hero" class="black-bg white-txt radius-bdr">
-      <div class="row">
-        <div id="intro" class="padding-rght">
-          <div class="margin-lft">
-            <!-- center-top -->
-            <h3 class="medium-txt orange-txt">Hi, I am</h3>
-            <h1 class="huge-txt">
-              PAUL <br />
-              TRAN
-            </h1>
-            <p class="small-txt margin-bttm">Software Engineer</p>
+    <!-- ======= Mobile nav toggle button ======= -->
+    <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+    <!-- ======= Header ======= -->
+    <header id="header">
+      <div class="d-flex flex-column">
+        <div class="profile">
+          <img
+            src="assets/img/profile-image2.png"
+            alt=""
+            class="img-fluid rounded-circle"
+          />
+          <h1 class="text-light"><a href="index.html">Paul Tran</a></h1>
+          <div class="social-links mt-3 text-center">
+            <!--<a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+            <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+            <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+            <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>-->
             <!--<a
-                class="semi-medium-txt action-btn custom-bg fade clean-white-txt"
-                href="#contact"
-                style="padding: 5px 10px"
-                >Contact me</a
-              >-->
-              <!-- Old resume href="https://drive.google.com/file/d/1oUFFm0xMyVKhFh2t4P8z6OiU9K4NzWSK/view?usp=sharing" -->
-            <!-- href="https://drive.google.com/file/d/1MO6PipqUaZPhYs4i7KTxbtfY00-0otyE/view?usp=sharing" -->
-              <a
-                class="btn btn-success margin-bttm resume"
-                target="_blank"
-                href="./resources/PaulTran antra resume.pdf" download="paultran-resume"
-                >My Resume</a
-              >
+              href="https://www.linkedin.com/in/baoquoctran1998/"
+              class="linkedin"
+              ><i class="bx bxl-linkedin"></i
+            ></a>-->
           </div>
         </div>
+
+        <nav id="navbar" class="nav-menu navbar">
+          <ul>
+            <li>
+              <a href="#hero" class="nav-link scrollto active"
+                ><i class="bx bx-home"></i> <span>Home</span></a
+              >
+            </li>
+            <li>
+              <a href="#about" class="nav-link scrollto"
+                ><i class="bx bx-user"></i> <span>About</span></a
+              >
+            </li>
+            <li>
+              <a href="#skills" class="nav-link scrollto"
+                ><i class="bx bx-server"></i> <span>Skills</span></a
+              >
+            </li>
+            <li>
+              <a href="#resume" class="nav-link scrollto"
+                ><i class="bx bx-file-blank"></i> <span>Experience</span></a
+              >
+            </li>
+            <li>
+              <a href="#portfolio" class="nav-link scrollto"
+                ><i class="bx bx-book-content"></i> <span>Portfolio</span></a
+              >
+            </li>
+            <li>
+              <a href="#contact" class="nav-link scrollto"
+                ><i class="bx bx-envelope"></i> <span>Contact</span></a
+              >
+            </li>
+          </ul>
+        </nav>
+        <!-- .nav-menu -->
       </div>
     </header>
-    <!-- images -->
-    <div class="margin-top">
-      <!-- summary -->
-      <section id="summary" class="container margin-bttm-2">
-        <h2 class="sign">
-          <span class="semi-large-txt white-txt b">About</span>
-        </h2>
-        <div class="row black-bg white-txt radius-bdr shadow margin-top">
-          <div
-            class="col-xs-12 col-sm-12 col-md-4 offset-md-1 col-lg-4 offset-lg-1 box box-center-horizontal"
-          >
-            <img
-              class="summary-portrait"
-              src="./images/portrait7.png"
-              alt="man smiles, looks at camera"
-            />
+    <!-- End Header -->
+
+    <!-- ======= Hero Section ======= -->
+    <section
+      id="hero"
+      class="d-flex flex-column justify-content-center align-items-center"
+    >
+      <div class="hero-container" data-aos="fade-in">
+        <h1>Paul Tran</h1>
+        <p>
+          I'm
+          <span
+            class="typed"
+            data-typed-items="Frontend, Backend, Fullstack developer"
+          ></span>
+        </p>
+      </div>
+    </section>
+    <!-- End Hero -->
+
+    <main id="main">
+      <!-- ======= About Section ======= -->
+      <section id="about" class="about">
+        <div class="container">
+          <div class="section-title">
+            <h2>About</h2>
           </div>
 
-          <!-- margin-lft margin-bttm margin-top -->
-          <div
-            class="col-xs-12 col-sm-12 col-md-6 offset-md-1 col-lg-6 offset-lg-1"
-          >
-            <div class="margin-top">
-              <p class="medium-txt cap-case b">About me</p>
-              <p class="semi-medium-txt margin-bttm">
-                I am a developer with more than 5 years of experience developing modern front-end applications.  
-                Probably self-motivated developer loves learning web technologies and
-                building projects. I am currently open to all opportunities.
+          <div class="row">
+            <div class="col-lg-4" data-aos="fade-right">
+              <img
+                src="assets/img/profile-image2.png"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+            <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+              <h3>Web Developer</h3>
+              <p class="fst-italic">
+                I am a developer with more than 5 years of experience developing
+                modern front-end applications. Probably self-motivated developer
+                loves learning web technologies and building projects. I am
+                currently open to all opportunities.
+              </p>
+              <div class="row">
+                <div class="col-lg-6">
+                  <ul>
+                    <li>
+                      <i class="bi bi-chevron-right"></i>
+                      <strong>City:</strong> <span>Fairfax, USA</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-chevron-right"></i>
+                      <strong>Phone:</strong> <span>+123 456 7890</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-lg-6">
+                  <ul>
+                    <li>
+                      <i class="bi bi-chevron-right"></i>
+                      <strong>Degree:</strong> <span>Bachelor of Science</span>
+                    </li>
+                    <li>
+                      <i class="bi bi-chevron-right"></i>
+                      <strong>Email:</strong>
+                      <span>paul.tran189@gmail.com</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <h5>Quote:</h5>
+              <p>
+                "Behind that only one shining result, is the sweat and tear of a
+                thousand hours."
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End About Section -->
+
+      <!-- ======= Skills Section ======= -->
+      <section id="skills" class="skills section-bg">
+        <div class="container">
+          <div class="section-title">
+            <h2>Skills</h2>
+          </div>
+
+          <div class="row">
+            <div class="row margin-bttm">
+              <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 text-left">
+                <h4>Programming Languages</h4>
+              </div>
+
+              <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 text-left">
+                <img src="./assets/img/tech/java.png" class="skill" />
+                <img src="./assets/img/tech/js.png" class="skill" />
+                <img src="./assets/img/tech/typescript.svg" class="skill" />
+              </div>
+            </div>
+            <p></p>
+            <!-- Web dev section -->
+            <div class="row margin-bttm">
+              <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 text-left">
+                <h4>Web Development</h4>
+              </div>
+
+              <div
+                class="col-xs-12 col-sm-12 col-md-8 col-lg-8 text-left skills"
+              >
+                <img
+                  src="./assets/img/tech/html5.png"
+                  class="skill"
+                  alt="html5"
+                />
+                <img
+                  src="./assets/img/tech/css3.png"
+                  class="skill"
+                  alt="css3"
+                />
+                <img
+                  src="./assets/img/tech/jquery.png"
+                  class="skill"
+                  alt="jquery"
+                />
+                <img
+                  src="./assets/img/tech/react.png"
+                  class="skill"
+                  alt="react"
+                />
+                <img
+                  src="./assets/img/tech/redux.png"
+                  class="skill"
+                  alt="redux"
+                />
+                <img
+                  src="./assets/img/tech/nodejs.svg"
+                  class="skill"
+                  alt="nodejs"
+                />
+                <img
+                  src="./assets/img/tech/express.svg"
+                  class="skill"
+                  alt="express"
+                />
+                <img
+                  src="./assets/img/tech/rxjs.svg"
+                  class="skill"
+                  alt="rxjs"
+                />
+                <img
+                  src="./assets/img/tech/mongodb.svg"
+                  class="skill"
+                  alt="mongodb"
+                />
+                <img src="./assets/img/tech/sql.svg" class="skill" alt="sql" />
+                <img
+                  src="./assets/img/tech/docker.svg"
+                  class="skill"
+                  alt="docker"
+                />
+                <img src="./assets/img/tech/git.svg" class="skill" alt="git" />
+                <img
+                  src="./assets/img/tech/bit.svg"
+                  class="skill"
+                  alt="bitbucket"
+                />
+                <img
+                  src="./assets/img/tech/figma.svg"
+                  class="skill"
+                  alt="figma"
+                />
+              </div>
+            </div>
+
+            <!-- Platform dev section -->
+            <p></p>
+            <div class="row margin-bttm">
+              <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 text-left">
+                <h4>Platform</h4>
+              </div>
+
+              <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+                <img
+                  src="./assets/img/tech/window.svg"
+                  class="skill"
+                  alt="window"
+                />
+                <img
+                  src="./assets/img/tech/linux.svg"
+                  class="skill"
+                  alt="linux"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Skills Section -->
+
+      <!-- ======= Resume Section ======= -->
+      <section id="resume" class="resume">
+        <div class="container">
+          <div class="section-title">
+            <h2>Experience</h2>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-6" data-aos="fade-up">
+              <h3 class="resume-title">Professional Experience</h3>
+              <div class="resume-item">
+                <!--<h4>Master of Fine Arts &amp; Graphic Design</h4>
+                <h5>2015 - 2016</h5>
+                <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
+                <p>
+                  Qui deserunt veniam. Et sed aliquam labore tempore sed
+                  quisquam iusto autem sit. Ea vero voluptatum qui ut
+                  dignissimos deleniti nerada porti sand markend
+                </p>-->
+                <h4>React Developer</h4>
+                <h5>2021 - Present</h5>
+                <p><em>Dominos, Detroit, MI </em></p>
+                <ul>
+                  <li>
+                    Participated in developing, styling, testing reusable React
+                    components for completing user interface controls in the
+                    development of a single page application
+                  </li>
+                  <li>
+                    Consumed server-side event real time data using Redux Rxjs
+                    to accurately update new information to the dashboard every
+                    second
+                  </li>
+                  <li>
+                    Followed i18n internationalization and internal process to
+                    support dashboard functionalities in different countries and
+                    regions
+                  </li>
+                  <li>
+                    Used Git to fulfill version control of the project and avoid
+                    unexpected conflicts of code commits
+                  </li>
+                  <li>
+                    Performed Unit-tests using testing runners such as Jest and
+                    Enzyme
+                  </li>
+                </ul>
+              </div>
+              <div class="resume-item">
+                <!--<h4>Bachelor of Fine Arts &amp; Graphic Design</h4>
+                <h5>2010 - 2014</h5>
+                <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
+                <p>
+                  Quia nobis sequi est occaecati aut. Repudiandae et iusto quae
+                  reiciendis et quis Eius vel ratione eius unde vitae rerum
+                  voluptates asperiores voluptatem Earum molestiae consequatur
+                  neque etlon sader mart dila
+                </p>-->
+                <h4>React Developer</h4>
+                <h5>2019-2020</h5>
+                <p><em>CMRubinWorld, New York, NY </em></p>
+                <ul>
+                  <li>
+                    Implemented new features such as data visualization features
+                    to the existing web app by utilizing React, Redux, and
+                    Chart.js for the functionality of new modules
+                  </li>
+                  <li>
+                    Used CSS preprocessors such as Scss for website styling and
+                    created customizable CSS templates that could be reused in
+                    the application
+                  </li>
+                  <li>
+                    Developed server-side RESTful API using Express. Fulfilled
+                    state maintenance and the pass-around of stateless data in
+                    components using Redux
+                  </li>
+                  <li>Managed version control using Git</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+              <h3 class="resume-title">&nbsp;</h3>
+              <div class="resume-item">
+                <h4>Frontend developer</h4>
+                <h5>2018 - 2019</h5>
+                <p><em>Fleet Cost & Care, Detroit, MI </em></p>
+                <ul>
+                  <li>
+                    Developed dynamic web pages and implemented the design
+                    protocol using HTML5, CSS3, JavaScript, jQuery, and
+                    Bootstrap
+                  </li>
+                  <li>
+                    Participated in daily Scrum meetings, seasonal Sprints, and
+                    other Agile/Scrum project management workflow
+                  </li>
+                  <li>
+                    Created a customizable grid directive that used jQuery Slick
+                    Grid to handle large data
+                  </li>
+                  <li>
+                    Supervise the assessment of all graphic materials in order
+                    to ensure quality and accuracy of the design
+                  </li>
+                  <li>
+                    Used testing frameworks such as Mocha and Chai to perform
+                    unit tests
+                  </li>
+                </ul>
+              </div>
+              <div class="resume-item">
+                <h4>Graphic design specialist</h4>
+                <h5>2017 - 2018</h5>
+                <p><em>BCA Group, Hanoi Vietnam</em></p>
+                <ul>
+                  <li>
+                    Created dynamic website pages for the client-side
+                    application utilizing React along with Material UI and
+                    upgraded its user experience both visually as well as
+                    functionally through developing responsive UI components
+                    using CSS3 and JavaScript
+                  </li>
+                  <li>
+                    Collaborated with back-end engineers to optimize existing
+                    and deprecate unnecessary API calls to improve efficacy and
+                    efficiency
+                  </li>
+                  <li>
+                    Used Git to fulfill version control of the project and avoid
+                    unexpected conflicts of code commits
+                  </li>
+                  <li>
+                    Worked with the Agile/Scrum development workflow to deliver
+                    regular updates regarding project progress to the management
+                    team
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-6" data-aos="fade-up">
+              <h3 class="resume-title">Education</h3>
+              <div class="resume-item">
+                <h4>Bachelor of Science in Computer Science</h4>
+                <h5>2016 - 2020</h5>
+                <p><em>Troy University, Troy, AL</em></p>
+                <p>Cum Laude GPA: 3.5 / 4.0</p>
+                <p>First Prize of CGI challenge at Troy Hackathon I 2020</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Resume Section -->
+
+      <!-- ======= Portfolio Section ======= -->
+      <section id="portfolio" class="portfolio section-bg">
+        <div class="container">
+          <div class="section-title">
+            <h2>Portfolio</h2>
+          </div>
+
+          <div class="row marb-4">
+            <div class="col-lg-5">
+              <h1 class="mb-3">TechiesJob</h1>
+              <div class="techs mb-3">
+                <span class="tech">React</span>
+                <span class="tech">Redux</span>
+                <span class="tech">Nodejs</span>
+                <span class="tech">Express</span>
+                <span class="tech">Tomtom</span>
+                <span class="tech">Adzuna</span>
+                <span class="tech">Redis</span>
+              </div>
+              <p class="mb-4">
+                <strong>Description</strong> TechiesJob is a modern, real-time,
+                interactive tool for IT job seekers in the USA. Just type the
+                job title and select your desired location, TechiesJob will
+                deliver most current, available jobs on selected location with
+                link to fast application.
+              </p>
+
+              <p>
+                <a class="ghostBtn" href="http://techiesjob.com" target="_blank"
+                  >See Live</a
+                >
+                <a
+                  class="ghostBtn"
+                  href="https://github.com/JustCodeandChill/TechJobUSA"
+                  target="_blank"
+                  >Source code</a
+                >
               </p>
             </div>
 
-            <div class="">
-              <div class="box-txt">
-                <p class="medium-txt cap-case b">Quotes</p>
-                <p class="semi-medium-txt margin-bttm">
-                  "Behind that only one shining result, is the sweat and tear of
-                  a thousand failure."
-                </p>
-              </div>
-            </div>
-            <p class="medium-txt cap-case b">Hobbies</p>
-            <div class="box box-center-horizontal padding-btm">
-              <div class="padding-btm">
-                <span
-                  ><img
-                    class="icon"
-                    src="./images/open-book.png"
-                    alt="open book"
-                /></span>
-                <span class="hobby-txt margin-rgt">Reading</span>
-              </div>
-
-              <div>
-                <span
-                  ><img class="icon" src="./images/running.png" alt="open book"
-                /></span>
-                <span class="hobby-txt margin-rgt">Running</span>
-              </div>
-
-              <div>
-                <span
-                  ><img
-                    class="icon"
-                    src="./images/web-programming.png"
-                    alt="open book"
-                /></span>
-                <span class="hobby-txt margin-rgt">Programming</span>
-              </div>
-
-              <div>
-                <span
-                  ><img class="icon" src="./images/charity.png" alt="open book"
-                /></span>
-                <span class="hobby-txt margin-rgt">Volunteering</span>
-              </div>
+            <div class="col-lg-7">
+              <iframe
+                width="500"
+                height="345"
+                src="https://www.youtube.com/embed/rltjRJsvB5E"
+              >
+              </iframe>
             </div>
           </div>
-        </div>
-      </section>
 
-      <!-- Experience -->
-      <section id="experience" class="container margin-bttm">
-        <h2 role="tag" class="sign">
-          <span class="semi-large-txt white-txt b">Experience</span>
-        </h2>
-        <!-- CMRubinWorld -->
-        <div role="div-block" class="row radius-bdr shadow margin-top exp-block">
-          <div id="exp1" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 exp-bg">
-            <div class="exp-box-left left-animation shadow">
-              <p class="exp-job">Web Development</p>
-              <p class="exp-company">CMRubinWorld</p>
-              <div class="exp-work">
-                <p>As a developer, my mission is to help them</p>
-                <p>show their voice and deliver their meaningful message</p>
-                <p>and find the right partner</p>
+          <div class="row marb-4">
+            <div class="col-lg-5">
+              <h1 class="mb-3">Confer 121</h1>
+              <div class="techs mb-3">
+                <span class="tech">HTML5</span>
+                <span class="tech">CSS3</span>
+                <span class="tech">JavaScript</span>
+                <span class="tech">jQuery</span>
+                <span class="tech">Bootstrap</span>
               </div>
-              
-            </div>
-          </div>
-        </div>
+              <p class="mb-4">
+                <strong>Description</strong> Confer 121 is a traditional website
+                to showcase of a company strength to be able to capture the
+                world market. Providing great user experience and confident when
+                browsing your site
+              </p>
 
-        <!-- Fleet Cost & Care -->
-        <div role="div-block" class="row radius-bdr shadow margin-top exp-block last-block">
-          <div id="exp2" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 exp-bg">
-            <div class="exp-box-right-no-animation shadow">
-              <p class="exp-job">Web Development</p>
-              <p class="exp-company">Fleet Cost & Care</p>
-              <div class="exp-work">
-                <p>Every business need a professional website</p>
-                <p>to show their value and connect with their customers</p>
-                <p>and I am glad to be a part of it</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- BCA Group -->
-        <div role="div-block" class="row radius-bdr shadow margin-top exp-block">
-            <div id="exp3" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 exp-bg">
-                <div class="exp-box-left-no-animation shadow">
-                <p class="exp-job">Web Development</p>
-                <p class="exp-company">BCAGroup</p>
-                <div class="exp-work">
-                    <p> Running a business is hard enough processes getting in the way</p>
-                    <p> I and my team will makes it easier </p>
-                    <p> to run your business efficiently.</p>
-                </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Shopee -->
-        <div role="div-block" class="row radius-bdr shadow margin-top exp-block last-block">
-            <div id="exp4" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 exp-bg">
-              <div class="exp-box-right-no-animation shadow">
-                <p class="exp-job">Web Development</p>
-                <p class="exp-company">Shopee</p>
-                <div class="exp-work">
-                  <p>a deliberately archaic spelling of shop</p>
-                  <p>a store with old-fashioned charm</p>
-                  <p>with the hard work of developers searching for opportunities</p>
-                </div>
-              </div>
-            </div>
-          </div>     
-      </section>
-
-      <!-- Contact me -->
-      <section id="contact" class="container margin-top">
-        <h2 class="sign">
-          <span class="semi-large-txt white-txt b">Contact</span>
-        </h2>
-        <!-- white-txt -->
-        <div class="black-bg radius-bdr shadow">
-          <h2 class="contact-invite white-txt margin-bttm-2">
-            HAVE A PROJECT?<br />LETS TALK ABOUT IT
-          </h2>
-          <div class="row">
-            <div
-              class="col-xs-12 col-sm-12 col-md-6 col-lg-6"
-              style="border-right: 2px solid white; padding-left: 40px;"
-            >
-                <h4 class="white-txt">Drop me a message<br /><h3>
-                <div class="row margin-bttm">
-
-                    <!--<div class="col-sm-3 col-md-2">
-                        <a href="https://www.facebook.com/tranquoc.bao.90226/"><img class="contact-logo" src="images/fblogo.jpg" /></a>
-                    </div>-->
-
-                    <div class="col-sm-3 col-md-3">
-                        <a
-                        target="_blank"
-                        href="mailto:paul.tran189@gmail.com?subject=HelloPaulTran"
-                        ><img class="contact-logo " src="images/Gmail-logo.png" /></a>
-                    </div>
-                </div>
-                    <!--<div class="col-sm-3 col-md-2">
-                        <a href="https://www.linkedin.com/in/baoquoctran1998/" target="_blank"><img class="contact-logo" src="images/linkedinlogo.png" /></a>
-                    </div>-->   
-                <h4 class="white-txt">Checkout my GitHub if interested<br /><h3>
-                <div class="row">
-                    <div class="col-sm-3 col-md-2">
-                        <a href="https://github.com/JustCodeandChill" target="_blank">
-                            <img class="contact-logo white-txt" src="images/GitHub-Mark-Light-64px.png" />
-                        </a>
-                    </div>
-                </div>
-                  
-            </div>
-            <!-- Form part -->
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                <h3 style="text-align: center; color: white;">Contact Form</h3>
-              <div>
-                <form
-                  id="my-form"
-                  action="https://formspree.io/f/mwkaewzp"
-                  method="POST"
-                  class="dark-txt"
+              <p>
+                <a
+                  class="ghostBtn"
+                  href="https://justcodeandchill.github.io/coporateWeb/"
+                  target="_blank"
+                  >See Live</a
                 >
-                <div class="row input-row">
-                    <label class="col-xs-3 col-sm-3 col-md-3">Name:</label>
-                    <input class="col-xs-9 col-sm-9 col-md-9" type="text" name="name" placeholder="Jane Doe" /><br/>
-                </div>
+                <a
+                  class="ghostBtn"
+                  href="https://github.com/JustCodeandChill/coporateWeb"
+                  target="_blank"
+                  >Source code</a
+                >
+              </p>
+            </div>
 
-                <div class="row input-row">
-                    <label class="col-xs-3 col-sm-3 col-md-3">Email:</label>
-                    <input class="col-xs-9 col-sm-9 col-md-9" type="email" name="email" placeholder="jdoe@gmail.com"/><br/>
-                </div>
-                
-                <div class="row input-row">
-                    <label class="col-xs-3 col-sm-3 col-md-3">Message:</label>
-                    <input class="col-xs-9 col-sm-9 col-md-9" id="form-message" type="text" name="message" placeholder="We have a great opportunity for you"/><br/>
-                </div>
-                <div class="row">
-                    <span class="col-xs-4 col-sm-4 col-md-4 col-lg-4"></span>
-                    <button id="my-form-button" class="">SEND</button>
-                </div>
-                  
-                  <p id="my-form-status"></p>
-                </form>
+            <div class="col-lg-7">
+              <iframe
+                width="500"
+                height="345"
+                src="https://justcodeandchill.github.io/coporateWeb/"
+              >
+              </iframe>
+            </div>
+          </div>
+
+          <div class="row marb-4">
+            <div class="col-lg-5">
+              <h1 class="mb-3">Puzzle game</h1>
+              <div class="techs mb-3">
+                <span class="tech">HTML5</span>
+                <span class="tech">CSS3</span>
+                <span class="tech">JavaScript</span>
               </div>
+              <p class="mb-4">
+                <strong>Description</strong> Quick mind game with HTML5 game
+                development by solving interesting configured images. THe image
+                is randomly generated for every reload and there is a scoreboard
+                with tips and tricks for the grinders. Happy grinding !!
+              </p>
+
+              <p>
+                <a
+                  class="ghostBtn"
+                  href="https://justcodeandchill.github.io/puzzle-sliding/"
+                  target="_blank"
+                  >See Live</a
+                >
+                <a
+                  class="ghostBtn"
+                  href="https://github.com/JustCodeandChill/puzzle-sliding"
+                  target="_blank"
+                  >Source code</a
+                >
+              </p>
+            </div>
+
+            <div class="col-lg-7">
+              <iframe
+                width="500"
+                height="345"
+                src="https://justcodeandchill.github.io/puzzle-sliding/"
+              >
+              </iframe>
             </div>
           </div>
         </div>
       </section>
-    </div>
-    <script>
-      const sendEmailBtn = document.querySelector("#send-email");
+      <!-- End Portfolio Section -->
 
-      var form = document.getElementById("my-form");
+      <!-- ======= Testimonials Section ======= -->
+      <section id="testimonials" class="testimonials section-bg">
+        <div class="container">
+          <div class="section-title">
+            <h2>Testimonials</h2>
+          </div>
 
-      async function handleSubmit(event) {
-        event.preventDefault();
-        var status = document.getElementById("my-form-status");
-        var data = new FormData(event.target);
-        fetch(event.target.action, {
-          method: form.method,
-          body: data,
-          headers: {
-            Accept: "application/json",
-          },
-        })
-          .then((response) => {
-            status.innerHTML = "Thanks for your submission!";
-            form.reset();
-          })
-          .catch((error) => {
-            status.innerHTML = "Oops! There was a problem submitting your form";
-          });
-      }
-      form.addEventListener("submit", handleSubmit);
-    </script>
+          <div
+            class="testimonials-slider swiper"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="testimonial-item" data-aos="fade-up">
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Sometimes, Paul is a hard-working person. he sees the big
+                    pictures and understands the details
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                  <img
+                    src="assets/img/testimonials/testimonials-1.jpg"
+                    class="testimonial-img"
+                    alt=""
+                  />
+                  <h3>Saul Goodman</h3>
+                  <h4>Ceo &amp; Founder</h4>
+                </div>
+              </div>
+              <!-- End testimonial item -->
+
+              <div class="swiper-slide">
+                <div
+                  class="testimonial-item"
+                  data-aos="fade-up"
+                  data-aos-delay="100"
+                >
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    I leave the frontend work to you Paul, and I know I can
+                    trust your decision
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                  <img
+                    src="assets/img/testimonials/testimonials-2.jpg"
+                    class="testimonial-img"
+                    alt=""
+                  />
+                  <h3>Sara Wilsson</h3>
+                  <h4>Designer</h4>
+                </div>
+              </div>
+              <!-- End testimonial item -->
+
+              <div class="swiper-slide">
+                <div
+                  class="testimonial-item"
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+                >
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Paul is a great team players, he is a big help in my team
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                  <img
+                    src="assets/img/testimonials/testimonials-3.jpg"
+                    class="testimonial-img"
+                    alt=""
+                  />
+                  <h3>Jena Karlis</h3>
+                  <h4>Store Owner</h4>
+                </div>
+              </div>
+              <!-- End testimonial item -->
+
+              <!--<div class="swiper-slide">
+                <div
+                  class="testimonial-item"
+                  data-aos="fade-up"
+                  data-aos-delay="300"
+                >
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Fugiat enim eram quae cillum dolore dolor amet nulla culpa
+                    multos export minim fugiat minim velit minim dolor enim duis
+                    veniam ipsum anim magna sunt elit fore quem dolore labore
+                    illum veniam.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                  <img
+                    src="assets/img/testimonials/testimonials-4.jpg"
+                    class="testimonial-img"
+                    alt=""
+                  />
+                  <h3>Matt Brandon</h3>
+                  <h4>Freelancer</h4>
+                </div>
+              </div>-->
+              <!-- End testimonial item -->
+
+              <!--<div class="swiper-slide">
+                <div
+                  class="testimonial-item"
+                  data-aos="fade-up"
+                  data-aos-delay="400"
+                >
+                  <p>
+                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                    Quis quorum aliqua sint quem legam fore sunt eram irure
+                    aliqua veniam tempor noster veniam enim culpa labore duis
+                    sunt culpa nulla illum cillum fugiat legam esse veniam culpa
+                    fore nisi cillum quid.
+                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                  </p>
+                  <img
+                    src="assets/img/testimonials/testimonials-5.jpg"
+                    class="testimonial-img"
+                    alt=""
+                  />
+                  <h3>John Larson</h3>
+                  <h4>Entrepreneur</h4>
+                </div>
+              </div>-->
+              <!-- End testimonial item -->
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <!-- End Testimonials Section -->
+
+      <!-- ======= Contact Section ======= -->
+      <section id="contact" class="contact">
+        <div class="container">
+          <div class="section-title">
+            <h2>Contact</h2>
+            <h3 style="text-align: center">
+              HAVE A PROJECT? LETS TALK ABOUT IT
+            </h3>
+          </div>
+
+          <div class="row" data-aos="fade-in">
+            <div class="col-lg-5 d-flex align-items-stretch">
+              <div class="info">
+                <div class="address">
+                  <i class="bi bi-geo-alt"></i>
+                  <h4>Location:</h4>
+                  <p>Fairfax, VA</p>
+                </div>
+
+                <div class="email">
+                  <i class="bi bi-envelope"></i>
+                  <h4>Email:</h4>
+                  <p>paul.tran189@gmail.com</p>
+                </div>
+
+                <div class="phone">
+                  <i class="bi bi-phone"></i>
+                  <h4>Call:</h4>
+                  <p>+1 334-581-6917</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+              <form
+                action="forms/contact.php"
+                method="post"
+                role="form"
+                class="php-email-form"
+              >
+                <div class="row">
+                  <div class="form-group col-md-6">
+                    <label for="name">Your Name</label>
+                    <input
+                      type="text"
+                      name="name"
+                      class="form-control"
+                      id="name"
+                      required
+                    />
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="name">Your Email</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      name="email"
+                      id="email"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="name">Subject</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="subject"
+                    id="subject"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="name">Message</label>
+                  <textarea
+                    class="form-control"
+                    name="message"
+                    rows="10"
+                    required
+                  ></textarea>
+                </div>
+                <div class="my-3">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">
+                    Your message has been sent. Thank you!
+                  </div>
+                </div>
+                <div class="text-center">
+                  <button type="submit">Send Message</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Contact Section -->
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+
+    <!-- End  Footer -->
+
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/typed.js/typed.min.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
