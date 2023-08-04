@@ -431,6 +431,33 @@ section {
   background-color: lightblue;
 }
 
+.skill-textbox {
+  background-color: #0D1282;
+  color: #EEEDED;
+  font-size: 1.2rem;
+  padding: 4px 10px;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+.skills .skill-textbox {
+margin: 4px;
+}
+
+#skillInTextFormat, #skillInImageFormat {
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+
+.selected {
+  background-color: #F0DE36;
+  border-radius: 5px;
+  padding: 4px 10px;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
 .techs {
   display: flex;
   flex-direction: row;

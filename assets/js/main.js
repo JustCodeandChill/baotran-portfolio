@@ -266,4 +266,31 @@
       mirror: false,
     });
   });
+
+  // Add skill
+
+  const textBtn = document.getElementById("skillInTextFormat");
+  const textSection = document.getElementById("text-skill");
+  const imageBtn = document.getElementById("skillInImageFormat");
+  const imageSection = document.getElementById("image-skill");
+
+  textBtn.classList.add("selected");
+  imageSection.style.display = "none";
+
+  textBtn.addEventListener('click', () => {
+
+    textBtn.classList.add("selected");
+    textSection.style.display = "block";
+    imageBtn.classList.remove("selected");
+    imageSection.style.display = "none";
+  })
+
+  imageBtn.addEventListener('click', () => {
+    textBtn.classList.remove("selected");
+    textSection.style.display = "none";
+    imageBtn.classList.add("selected");
+    imageSection.style.display = "block";
+  })
+
 })();
+
