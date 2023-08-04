@@ -447,13 +447,36 @@ margin: 4px;
 #skillInTextFormat, #skillInImageFormat {
   margin-right: 20px;
   cursor: pointer;
+  padding: 4px 10px;
+}
+
+#skillInTextFormat:hover, #skillInImageFormat:hover {
+  text-decoration: underline;
+text-decoration-color: #D71313;
+}
+
+#image-skill , #text-skill {
+  position: relative;
+  right: 1000px;
+  -webkit-animation: slide 0.5s forwards;
+  animation: slide 0.5s forwards;
+  animation-delay: 0.1s;
+}
+
+/* animation */
+@-webkit-keyframes slide {
+    100% { right: 0; }
+}
+
+@keyframes slide {
+    100% { right: 0; }
 }
 
 
 .selected {
   background-color: #F0DE36;
   border-radius: 5px;
-  padding: 4px 10px;
+  padding: 4px 10px;  
   font-size: 1.1rem;
   font-weight: 700;
 }
