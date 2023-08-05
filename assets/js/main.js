@@ -154,19 +154,6 @@
   /**
    * Skills animation
    */
-  let skilsContent = select(".skills-content");
-  if (skilsContent) {
-    new Waypoint({
-      element: skilsContent,
-      offset: "80%",
-      handler: function (direction) {
-        let progress = select(".progress .progress-bar", true);
-        progress.forEach((el) => {
-          el.style.width = el.getAttribute("aria-valuenow") + "%";
-        });
-      },
-    });
-  }
 
   /**
    * Porfolio isotope and filter
@@ -205,9 +192,9 @@
   /**
    * Initiate portfolio lightbox
    */
-  const portfolioLightbox = GLightbox({
-    selector: ".portfolio-lightbox",
-  });
+  //const portfolioLightbox = GLightbox({
+  //  selector: ".portfolio-lightbox",
+  //});
 
   /**
    * Portfolio details slider
@@ -255,18 +242,6 @@
     },
   });
 
-  /**
-   * Animation on scroll
-   */
-  window.addEventListener("load", () => {
-    AOS.init({
-      duration: 1000,
-      easing: "ease-in-out",
-      once: true,
-      mirror: false,
-    });
-  });
-
   // Add skill
 
   const textBtn = document.getElementById("skillInTextFormat");
@@ -292,5 +267,11 @@
     imageSection.style.display = "block";
   })
 
+  setInterval(() => {
+    imageBtn.click()
+  }, 10000);
+  setInterval(() => {
+    textBtn.click()
+  }, 20000);
 })();
 

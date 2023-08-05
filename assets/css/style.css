@@ -333,6 +333,24 @@ section {
   margin-bottom: 0;
 }
 
+.profile__image {
+  background-image: url("../img/profile-image2.webp");
+  z-index: 10;
+  background-color: #0D1282;
+  border: 1px solid  #F0DE36;
+  border-radius: 20px;
+  padding-right: 150px;
+    background-repeat: no-repeat; 
+  background-size: cover;  
+  height: 100%;
+  width: 100%;
+}
+
+@media (max-width: 960px) {
+  .profile__image {
+    display: none;
+  }
+}
 /*--------------------------------------------------------------
 # Facts
 --------------------------------------------------------------*/
@@ -433,26 +451,39 @@ section {
 
 .skill-textbox {
   background-color: #0D1282;
+    display: inline-block;
   color: #EEEDED;
   font-size: 1.2rem;
   padding: 4px 10px;
   font-weight: 600;
   border-radius: 5px;
+  margin: 4px;
 }
 
-.skills .skill-textbox {
-margin: 4px;
+.skill-textbox2 {
+  background-color: #0D1282;
+  display: inline-block;
+  color: #EEEDED;
+  font-size: 1.1rem;
+  padding: 3px 10px;
+  font-weight: 600;
+  border-radius: 5px;
+  margin: 1px;
+  width: auto;
 }
 
 #skillInTextFormat, #skillInImageFormat {
+  display: inline-block;
+   border: 2px solid transparent;
   margin-right: 20px;
   cursor: pointer;
   padding: 4px 10px;
+  transition: border 0.2s;
 }
 
 #skillInTextFormat:hover, #skillInImageFormat:hover {
-  text-decoration: underline;
-text-decoration-color: #D71313;
+  border: 2px solid #c8c8c8;
+   border-radius: 5px;
 }
 
 #image-skill , #text-skill {
@@ -497,10 +528,18 @@ text-decoration-color: #D71313;
 }
 
 .ghostBtn {
-  padding: 6px 8px;
-  border: 2px solid #040b14;
-  color: #040b14;
+  padding: 6px 10px;
+  border: 2px solid #0D1282;
+  color: #0D1282;
   cursor: pointer;
+    font-size: 1.1rem;
+  border-radius: 5px;
+}
+
+.ghostBtn:hover {
+  background-color: #0D1282;
+  color: white;
+  transition: 0.2s all;
 }
 
 .marb-4 {
@@ -564,6 +603,44 @@ text-decoration-color: #D71313;
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
+.project__thumbnail {
+  width: 500px;
+  height: 345px;
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+#techiesjob {
+  background-image: url("../img/tech/techiewebp.webp");
+  border: 2px solid #0D1282;
+  border-radius: 3px;
+}
+
+#confir {
+    background-image: url("../img/tech/confir.webp");
+  border: 2px solid #0D1282;
+  border-radius: 3px;
+  background-position: center;
+}
+
+#puzzle {
+  background-image: url("../img/tech/puzzle.webp");
+  border: 2px solid #0D1282;
+  border-radius: 3px;
+  background-position: center;
+}
+
+.shadow-left {
+  -webkit-box-shadow: -9px 9px 0px -1px #0D1282;
+-moz-box-shadow: -9px 9px 0px -1px #0D1282;
+box-shadow: -9px 9px 0px -1px #0D1282;
+}
+
+.shadow-right {
+-webkit-box-shadow: 7px 7px 0px 1px #0D1282;
+-moz-box-shadow: 7px 7px 0px 1px #0D1282;
+box-shadow: 7px 7px 0px 1px #0D1282;
+}
 .portfolio .portfolio-item {
   margin-bottom: 30px;
 }

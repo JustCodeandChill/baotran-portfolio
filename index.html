@@ -19,11 +19,10 @@
     rel="stylesheet" />
 
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet" />
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
+  <!--<link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />-->
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
   <!-- Template Main CSS File -->
@@ -45,7 +44,7 @@
   <header id="header">
     <div class="d-flex flex-column">
       <div class="profile">
-        <img src="assets/img/profile-image2.png" alt="" class="img-fluid rounded-circle" />
+        <img src="./assets/img/tech/computer.webp" alt="" class="img-fluid rounded-circle" />
         <h1 class="text-light"><a href="index.html">Paul Tran</a></h1>
         <div class="social-links mt-3 text-center">
           <!--<a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
@@ -89,7 +88,7 @@
 
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
-    <div class="hero-container" data-aos="fade-in">
+    <div class="hero-container">
       <h1>Paul Tran</h1>
       <p>
         I'm
@@ -108,10 +107,11 @@
         </div>
 
         <div class="row">
-          <div class="col-lg-4" data-aos="fade-right" style="background-color: 'red';">
-            <img src="assets/img/profile-image2.png" class="img-fluid" alt="" />
+          <div class="col-lg-4 pt-4 pt-lg-0 content" style="position: relative;">
+            <div class="profile__image "></div>
+            <!--<img src="assets/img/profile-image2.png" class="img-fluid" alt="" />-->
           </div>
-          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+          <div class="col-lg-8 pt-4 pt-lg-0 content">
             <h3>Web Developer / Software Engineer / Data Analyst</h3>
             <p class="fst-italic">
               I am a developer with more than 5 years of experience developing
@@ -162,7 +162,7 @@
     <!-- End About Section -->
 
     <!-- ======= Skills Section ======= -->
-    <section id="skills-image" class="skills section-bg">
+    <section id="skills" class="skills section-bg">
       <div class="container">
         <div class="section-title">
           <h2>Skills</h2>
@@ -180,10 +180,10 @@
             </div>
 
             <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 text-left">
-              <img src="./assets/img/tech/js.png" alt="JavaScript" class="skill" />
-              <img src="./assets/img/tech/typescript.svg" alt="TypeScript" class="skill" />
-              <img src="./assets/img/tech/java.png" alt="Java" class="skill" />
-              <img src="./assets/img/tech/Python.svg" alt="Python" class="skill" />
+              <img src="./assets/img/tech/js_result.webp" alt="JavaScript" class="skill" />
+              <img src="./assets/img/tech/typescript_result.webp" alt="TypeScript" class="skill" />
+              <img src="./assets/img/tech/java_result.webp" alt="Java" class="skill" />
+              <img src="./assets/img/tech/Python_result.webp" alt="Python" class="skill" />
             </div>
           </div>
           <p></p>
@@ -194,7 +194,8 @@
             </div>
 
             <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 text-left skills">
-              <img src="./assets/img/tech/html5.png" class="skill" alt="html5" />
+              <img src="./assets/img/tech/html5.
+              " class="skill" alt="html5" />
               <img src="./assets/img/tech/css3.png" class="skill" alt="css3" />
               <img src="./assets/img/tech/jquery.png" class="skill" alt="jquery" />
               <img src="./assets/img/tech/react.png" class="skill" alt="react" />
@@ -295,17 +296,9 @@
         </div>
 
         <div class="row">
-          <div class="col-lg-6" data-aos="fade-up">
+          <div class="col-lg-6">
             <h3 class="resume-title">Professional Experience</h3>
             <div class="resume-item">
-              <!--<h4>Master of Fine Arts &amp; Graphic Design</h4>
-                <h5>2015 - 2016</h5>
-                <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
-                <p>
-                  Qui deserunt veniam. Et sed aliquam labore tempore sed
-                  quisquam iusto autem sit. Ea vero voluptatum qui ut
-                  dignissimos deleniti nerada porti sand markend
-                </p>-->
               <h4>IT Consultant</h4>
               <h5>2021 - Present</h5>
               <p><em>Antra.Inc, Springfield , VA </em></p>
@@ -366,7 +359,7 @@
               </ul>
             </div>
           </div>
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-6">
             <h3 class="resume-title">&nbsp;</h3>
             <div class="resume-item">
               <h4>Frontend developer</h4>
@@ -423,7 +416,7 @@
         </div>
 
         <div class="row">
-          <div class="col-lg-6" data-aos="fade-up">
+          <div class="col-lg-6">
             <h3 class="resume-title">Education</h3>
             <div class="resume-item">
               <h4>Master of Science in Data Analytics</h4>
@@ -455,18 +448,19 @@
           <div class="col-lg-5">
             <h1 class="mb-3">TechiesJob</h1>
             <div class="techs mb-3">
-              <span class="tech">React</span>
-              <span class="tech">Redux</span>
-              <span class="tech">Nodejs</span>
-              <span class="tech">Express</span>
-              <span class="tech">Tomtom</span>
-              <span class="tech">Adzuna</span>
-              <span class="tech">Redis</span>
+              <span class="skill-textbox2">JavaScript</span>
+              <span class="skill-textbox2">React</span>
+              <span class="skill-textbox2">Redux</span>
+              <span class="skill-textbox2">Nodejs</span>
+              <span class="skill-textbox2">Express</span>
+              <span class="skill-textbox2">Tomtom</span>
+              <span class="skill-textbox2">Adzuna</span>
+              <span class="skill-textbox2">Redis</span>
             </div>
             <p class="mb-4">
-              <strong>Description</strong> TechiesJob is a modern, real-time,
+              <strong>Description</strong><br /> TechiesJob is a modern, real-time,
               interactive tool for IT job seekers in the USA. Just type the
-              job title and select your desired location, TechiesJob will
+              job title and select your desired location. <br /> TechiesJob will
               deliver most current, available jobs on selected location with
               link to fast application.
             </p>
@@ -478,23 +472,22 @@
           </div>
 
           <div class="col-lg-7">
-            <iframe width="500" height="345" src="https://www.youtube.com/embed/rltjRJsvB5E">
-            </iframe>
+            <div id="techiesjob" class="project__thumbnail shadow-right"></div>
           </div>
         </div>
 
         <div class="row marb-4">
           <div class="col-lg-5">
-            <h1 class="mb-3">Confer 121</h1>
+            <h1 class="mb-3">Confer</h1>
             <div class="techs mb-3">
-              <span class="tech">HTML5</span>
-              <span class="tech">CSS3</span>
-              <span class="tech">JavaScript</span>
-              <span class="tech">jQuery</span>
-              <span class="tech">Bootstrap</span>
+              <span class="skill-textbox2">HTML5</span>
+              <span class="skill-textbox2">CSS3</span>
+              <span class="skill-textbox2">JavaScript</span>
+              <span class="skill-textbox2">jQuery</span>
+              <span class="skill-textbox2">Bootstrap</span>
             </div>
             <p class="mb-4">
-              <strong>Description</strong> Confer 121 is a traditional website
+              <strong>Description</strong> Confer is a traditional website
               to showcase of a company strength to be able to capture the
               world market. Providing great user experience and confident when
               browsing your site
@@ -507,8 +500,7 @@
           </div>
 
           <div class="col-lg-7">
-            <iframe width="500" height="345" src="https://justcodeandchill.github.io/coporateWeb/">
-            </iframe>
+            <div id="confir" class="project__thumbnail shadow-left"></div>
           </div>
         </div>
 
@@ -516,13 +508,13 @@
           <div class="col-lg-5">
             <h1 class="mb-3">Puzzle game</h1>
             <div class="techs mb-3">
-              <span class="tech">HTML5</span>
-              <span class="tech">CSS3</span>
-              <span class="tech">JavaScript</span>
+              <span class="skill-textbox2">HTML5</span>
+              <span class="skill-textbox2">CSS3</span>
+              <span class="skill-textbox2">JavaScript</span>
             </div>
             <p class="mb-4">
               <strong>Description</strong> Quick mind game with HTML5 game
-              development by solving interesting configured images. THe image
+              development by solving interesting configured images. The image
               is randomly generated for every reload and there is a scoreboard
               with tips and tricks for the grinders. Happy grinding !!
             </p>
@@ -535,122 +527,17 @@
           </div>
 
           <div class="col-lg-7">
-            <iframe width="500" height="345" src="https://justcodeandchill.github.io/puzzle-sliding/">
-            </iframe>
+            <div id="puzzle" class="project__thumbnail shadow-right"></div>
+
           </div>
         </div>
       </div>
     </section>
     <!-- End Portfolio Section -->
 
-    <!-- ======= Testimonials Section ======= -->
-    <section id="testimonials" class="testimonials section-bg">
-      <div class="container">
-        <div class="section-title">
-          <h2>Testimonials</h2>
-        </div>
+    <!--======= Testimonials Section ======= -->
 
-        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="testimonial-item" data-aos="fade-up">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Sometimes, Paul is a hard-working person. he sees the big
-                  pictures and understands the details
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="" />
-                <h3>Saul Goodman</h3>
-                <h4>Ceo &amp; Founder</h4>
-              </div>
-            </div>
-            <!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="100">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  I leave the frontend work to you Paul, and I know I can
-                  trust your decision
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="" />
-                <h3>Sara Wilsson</h3>
-                <h4>Designer</h4>
-              </div>
-            </div>
-            <!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="200">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Paul is a great team players, he is a big help in my team
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="" />
-                <h3>Jena Karlis</h3>
-                <h4>Store Owner</h4>
-              </div>
-            </div>
-            <!-- End testimonial item -->
-
-            <!--<div class="swiper-slide">
-                <div
-                  class="testimonial-item"
-                  data-aos="fade-up"
-                  data-aos-delay="300"
-                >
-                  <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    Fugiat enim eram quae cillum dolore dolor amet nulla culpa
-                    multos export minim fugiat minim velit minim dolor enim duis
-                    veniam ipsum anim magna sunt elit fore quem dolore labore
-                    illum veniam.
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  </p>
-                  <img
-                    src="assets/img/testimonials/testimonials-4.jpg"
-                    class="testimonial-img"
-                    alt=""
-                  />
-                  <h3>Matt Brandon</h3>
-                  <h4>Freelancer</h4>
-                </div>
-              </div>-->
-            <!-- End testimonial item -->
-
-            <!--<div class="swiper-slide">
-                <div
-                  class="testimonial-item"
-                  data-aos="fade-up"
-                  data-aos-delay="400"
-                >
-                  <p>
-                    <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                    Quis quorum aliqua sint quem legam fore sunt eram irure
-                    aliqua veniam tempor noster veniam enim culpa labore duis
-                    sunt culpa nulla illum cillum fugiat legam esse veniam culpa
-                    fore nisi cillum quid.
-                    <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                  </p>
-                  <img
-                    src="assets/img/testimonials/testimonials-5.jpg"
-                    class="testimonial-img"
-                    alt=""
-                  />
-                  <h3>John Larson</h3>
-                  <h4>Entrepreneur</h4>
-                </div>
-              </div>-->
-            <!-- End testimonial item -->
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-      </div>
-    </section>
-    <!-- End Testimonials Section -->
+    <!-- End Testimonials Section-->
 
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
@@ -662,7 +549,7 @@
           </h3>
         </div>
 
-        <div class="row" data-aos="fade-in">
+        <div class="row">
           <div class="col-lg-5 d-flex align-items-stretch">
             <div class="info">
               <div class="address">
@@ -674,7 +561,15 @@
               <div class="email">
                 <i class="bi bi-envelope"></i>
                 <h4>Email:</h4>
-                <p>paul.tran189@gmail.com</p>
+                <p><a style="display: inline-block;" target="_blank"
+                    href="mailto:paul.tran189@gmail.com">paul.tran189@gmail.com</a></p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Linkedin:</h4>
+                <p><a style="display: inline-block;" target="_blank"
+                    href="https://www.linkedin.com/in/baoquoctran1998/">baoquoctran1998</a></p>
               </div>
 
               <div class="phone">
@@ -684,8 +579,6 @@
               </div>
             </div>
           </div>
-
-
 
           <div class="col-lg-7 mt-5 mt-lg-0">
             <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
@@ -711,21 +604,17 @@
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
 
   <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-  <script>
+  <script defer src="assets/js/main.js"></script>
 
-  </script>
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!--<script defer src="assets/vendor/glightbox/js/glightbox.min.js"></script>-->
+  <script defer src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script defer src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+
 </body>
 
 </html>
